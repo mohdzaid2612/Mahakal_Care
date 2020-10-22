@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contact__page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact__text{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins';
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    /* clip-path: polygon(0 0, 100% 0%, 100% 59%, 0 100%, 0% 50%); */
+}
+.contactText{
+    width: 50%;
+}
+.contactText h1{
+    font-weight: bold;
+}
+.contactText p{
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+.contact__form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    background-image: url('../img/cool-background.png');
+}
+
+.form__area{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+.form__area form{
+    padding: 1.5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: -200px;
+    background-image: repeating-linear-gradient(188deg, rgb(255,255,255) 0px, rgb(255,255,255) 19px,transparent 19px, transparent 21px),repeating-linear-gradient(84deg, rgb(255,255,255) 0px, rgb(255,255,255) 19px,transparent 19px, transparent 21px),repeating-linear-gradient(244deg, rgb(255,255,255) 0px, rgb(255,255,255) 19px,transparent 19px, transparent 21px),linear-gradient(90deg, rgb(229, 37, 28),rgb(213, 10, 32));
+}
+.form__area form div{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.form__area form div:nth-child(6){
+    align-items: center;
+}
+.form__area form div input{
+    width: 60%;
+    outline: none;
+    border: none;
+    background-color: #F4F7F6;
+    padding: 0 1rem;
+    font-family: 'Open Sans';
+}
+.form__area form div input::placeholder,.form__area form div textarea::placeholder{
+    font-family: 'Poppins';
+    font-weight: lighter;
+}
+.form__area form div textarea{
+    outline: none;
+    border: none;
+    background-color: #F4F7F6;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+.form__area form div h4{
+    font-family: 'Poppins';font-size: 1.2rem;
+}
+.form__area form div div h5{
+    font-family: 'Poppins';font-size: 1.2rem;
+    font-weight: lighter;
+}
+.arrow__right{
+    width: 65%;
+    display: flex;
+    justify-content: flex-start !important;
+}
+.arrow__right i{
+    font-size: 1.7rem;
+    margin-left: 20px;
+    transition: 0.2s linear;
+}
+.submit__button:hover  i{
+    transform: translateX(150px);
+}
+.form__area form div button{
+    width: 30%;
+    padding: 0.5rem 0;
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    letter-spacing: 1.5px;
+    background-color: #457b9d;
+    color: #fff;
+}
+.form__side{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.side__text h2{
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side__text h2::before{
+    content: '\f00c';
+    font-family: 'fontAwesome';
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background-color: #1B4F72;
+    padding: 0.5rem;
+    color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.side__text h1{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+
+.contact__footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.contact__footer__main{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact__footer__links ul{
+    list-style: none;
+    display: flex;
+}
+.contact__footer__links ul li{
+    margin: 0 0.6rem;
+}
+
+.contact__footer__icons{
+    display: flex;
+}
+.contact__footer__icons div{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+    border-radius: 999px;
+    background-color: #1B4F72;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.contact__footer__icons div a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact__footer__links ul li a{
+    text-decoration: none;
+    color: #999;
+}
+
+@media (max-width:768px){
+    .contact__form{flex-direction: column;}
+    .form__area{width: 100%;}
+    .contact__text{
+        height: auto;
+    }
+    .contactText{
+        margin: 2rem 0;
+        width: 80%;
+    }
+    .form__area form{
+        position: relative;
+        bottom: 20px;
+    }
+    .contact__form{
+        height: auto;
+    }
+    .form__side{
+        width: 70%;
+    }
+    .contact__footer{
+        height: auto;
+    }
+    .contact__footer__main{
+        flex-direction: column;
+    }
+    .contact__footer__icons{
+        margin: 1rem 0;
+    }
+    .form__side{
+        width: 90%;
+    }
+    .side__text {
+        width: 100%;
+    }
+    .side__text h2{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .side__text h2::before{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .side__text h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+}
+
+@media (max-width:450px){
+    .form__area form div{
+        flex-direction: column;
+    }
+    .form__area form div input{
+        width: 100%;
+    }
+    .arrow__right h5,.arrow__right i{
+        display: none;
+    }
+    .submit__button button{
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahakal Care</title>
+     <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/Contact.css" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+   
+
+   <section class="contact__page">
+       <div class="contact__text">
+           <div class="contactText">
+               <h1>Contact Our Doctors Team</h1>
+               <p>Our team is happy to look after you. Fill out the form and we’ll be in touch as soon as possible.</p>
+           </div>
+       </div>
+       <div class="contact__form">
+           <div class="form__area">
+               <form>
+                   <div>
+                       <h4>Full Name</h4>
+                       <input type="text" placeholder="John Cena" required>
+                   </div>
+                   <div>
+                        <h4>Email</h4>
+                        <input type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <input id="phone_num" pattern="[6-9]{1}[0-9]{9}" title="Wrong Pattern" type="text" placeholder="9876543210" onKeyUp="validate(event)" maxlength="10" required>
+                    </div>
+                    <div>
+                        <h4>Subject</h4>
+                        <input type="text" placeholder="Cardiology" required>
+                    </div>
+                    <div>
+                        <h4>Your Message</h4>
+                        <textarea name="" id="" cols="35" rows="5" placeholder="Hello there..!!" required></textarea>
+                    </div>
+                    <div class="submit__button">
+                        <div class="arrow__right">
+                        <h5>Get In Touch</h5>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                        <button>Submit</button>
+                    </div>
+               </form>
+           </div>
+           <div class="form__side">
+               <div class="side__text">
+                   <h1>With Mahakal Care you can :</h1>
+                    <h2> Possimus, voluptas doloremque! Rem sit voluptates fugit.</h2>
+                    <h2> Possimus, voluptas doloremque! Rem sit voluptates fugit.</h2>
+                    <h2> Possimus, voluptas doloremque! Rem sit voluptates fugit.</h2>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="contact__footer">
+       <div class="contact__footer__main">
+           <div class="contact__footer__icons">
+                <div><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></div>
+           </div>
+           <div class="contact__footer__links">
+               <ul>
+                   <li> <a href="index.htm">Home</a> </li>
+                   <li> <a href="#">Privacy & Terms</a> </li>
+                   <li> <a href="#">Policy</a> </li>
+                   <li> <a href="#">&#169;2020 indorinama.com</a> </li>
+               </ul>
+           </div>
+       </div>
+   </section>
+
+   <script>
+    function validate(e) {
+        var invalidcharacters = /[^0-9]/gi
+        var phn = document.getElementById('phone_num');
+        if (invalidcharacters.test(phn.value)) {
+            newstring = phn.value.replace(invalidcharacters, "");
+            phn.value = newstring
+        }
+    }
+   </script>
+
+</body>
+</html>

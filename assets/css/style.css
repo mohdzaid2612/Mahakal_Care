@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+*{
+  font-family: 'Nunito' !important;
+}
+
+/* html{
+  scroll-behavior: smooth;
+} */
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Nunito'; */
   color: #444444;
 }
 
@@ -495,6 +503,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   color: #f2f2f2;
 }
+#hero h2 img{
+  width: 30px;
+}
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
@@ -701,13 +712,14 @@ section {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
-  padding: 40px 30px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
 }
 
-.why-us .icon-boxes .icon-box i {
-  font-size: 40px;
-  color: #1977cc;
+.why-us .icon-boxes .icon-box img {
+ width: 70px;
   margin-bottom: 30px;
 }
 
@@ -718,8 +730,9 @@ section {
 }
 
 .why-us .icon-boxes .icon-box p {
-  font-size: 15px;
+  font-size: 16px;
   color: #848484;
+  text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -921,6 +934,7 @@ section {
   border-radius: 10px;
   background-color: #2c4964;
 }
+
 .counts .count-box div img{
   /* position: absolute;
   top: -25px;
@@ -1010,6 +1024,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 22px;
+  text-transform: capitalize;
 
 }
 
@@ -1092,7 +1107,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 .hospital__main{
   width: 100%;
@@ -1129,6 +1144,7 @@ section {
   color: #000;
   font-weight: bold;
   text-align: center;
+  text-transform: capitalize;
 }
 
 @media (max-width:768px){
@@ -1509,7 +1525,7 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px 30px 30px 60px;
+  padding: 30px 30px 30px 120px;
   margin: 30px 15px;
   min-height: 200px;
   box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
@@ -1518,7 +1534,7 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width: 140px;
   border-radius: 10px;
   border: 6px solid #fff;
   position: absolute;
@@ -1789,14 +1805,13 @@ section {
 .contact__img h1{
   color: #fff;
 }
-.contact__img i{
-  font-size: 4rem;
+.contact__img img{
+  width: 44px;
   margin-left: 30px;
-  transition: 0.5s ease-in-out;
-  color: #fff;
+  transition: 0.3s ease-in-out;
 }
-.contact__main:hover > .contact__img i{
-  transform: translateX(100px);
+.contact__main:hover > .contact__img img{
+  transform: translateX(90px);
   
 }
 
@@ -1820,7 +1835,7 @@ section {
   .contact__img{
     width: 100%;
   }
-  .contact__img i{
+  .contact__img img{
     display: none;
   }
 }
@@ -1962,6 +1977,8 @@ section {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  color: #777777;
+  line-height: 1;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1972,7 +1989,7 @@ section {
   color: #777777;
   transition: 0.3s;
   display: inline-block;
-  line-height: 1;
+ 
 }
 
 #footer .footer-top .footer-links ul a:hover {

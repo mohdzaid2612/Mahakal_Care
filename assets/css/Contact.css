@@ -122,13 +122,14 @@
     justify-content: flex-start;
     align-items: flex-end;
 }
+
 .side__text h2{
     width: 100%;
     font-size: 1.2rem;
     margin: 2rem 0;
     text-align: left;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 

@@ -35,26 +35,26 @@
        </div>
        <div class="contact__form">
            <div class="form__area">
-               <form>
+               <form method="POST" action="./forms/contact.php">
                    <div>
                        <h4>Full Name</h4>
-                       <input type="text" placeholder="John Cena" required>
+                       <input type="text" placeholder="Savan Joshi" required name="name">
                    </div>
                    <div>
                         <h4>Email</h4>
-                        <input type="email" placeholder="example@gmail.com">
+                        <input type="email" placeholder="example@gmail.com" name="email">
                     </div>
                     <div>
                         <h4>Phone Number</h4>
-                        <input id="phone_num" pattern="[6-9]{1}[0-9]{9}" title="Wrong Pattern" type="text" placeholder="9876543210" onKeyUp="validate(event)" maxlength="10" required>
+                        <input id="phone_num" pattern="[6-9]{1}[0-9]{9}" title="Wrong Pattern" type="text" placeholder="8989801088" onKeyUp="validate(event)" maxlength="10" required name="phone_number">
                     </div>
                     <div>
                         <h4>Subject</h4>
-                        <input type="text" placeholder="Cardiology" required>
+                        <input type="text" placeholder="Cardiology" required name="subject">
                     </div>
                     <div>
                         <h4>Your Message</h4>
-                        <textarea name="" id="" cols="35" rows="5" placeholder="Hello there..!!" required></textarea>
+                        <textarea name="" id="" cols="35" rows="5" placeholder="Hello there..!!" required name="message"></textarea>
                     </div>
                     <div class="submit__button">
                         <div class="arrow__right">
@@ -90,7 +90,7 @@
                    <li> <a href="index.htm">Home</a> </li>
                    <li> <a href="#">Privacy & Terms</a> </li>
                    <li> <a href="#">Policy</a> </li>
-                   <li> <a href="http://www.indorinama.com">indorinama (Advertising & Digital Services )</a> </li>
+                   <li class="li__footer"> <a href="http://www.indorinama.com" class="indorinama">indorinama</a><span>(Advertising & Digital Services )</span> </li>
                </ul>
            </div>
        </div>

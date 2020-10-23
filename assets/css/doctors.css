@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -92,6 +93,8 @@
     margin-bottom: 5px;
     font-size: 20px;
     color: #2c4964;
+    font-family: 'Nunito';
+    text-transform: capitalize;
   }
   
   .doctors .member span {
@@ -100,6 +103,7 @@
     padding-bottom: 10px;
     position: relative;
     font-weight: 500;
+    font-family: 'Poppins';
   }
   
   .doctors .member span::after {
@@ -226,6 +230,12 @@
     text-decoration: none;
     color: #999;
 }
+.contact__footer__links ul li span{
+  color: #999;
+}
+.contact__footer__links ul li .indorinama{
+  color: #1977cc;
+}
 
 
 @media (max-width:768px){
@@ -266,5 +276,12 @@
     }
     .doctors .member span{
         font-size: 0.8rem;
+    }
+    .li__footer{
+      display: flex;
+      flex-direction: column;
+    }
+    .li__footer span{
+      font-size: 0.8rem;
     }
 }

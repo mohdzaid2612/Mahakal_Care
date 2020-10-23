@@ -544,10 +544,32 @@ height: 80vh;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
-   transform: translateY(-180px);
+   transform: translateY(-100px);
   }
   .carousel-item .carousel-caption h5::before{
     display: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next{
+      align-items: flex-end;
+      bottom: 10%;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    right: 0;
+    left: 0px;
+  }
+  .carousel-control-next{
+    left: 40px;
+  }
+  .carousel-control-prev-icon,.carousel-control-next-icon{
+    width: 30px;
+    padding: 0.5rem !important;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  .carousel-control-prev-icon span{
+    width: 30px !important;
   }
 }
 
@@ -803,6 +825,8 @@ section {
   text-align: left;
 }
 
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1051,6 +1075,7 @@ section {
   display: grid;
   place-items: center;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .services .icon-box .icon {
@@ -1093,7 +1118,12 @@ section {
   margin-bottom: 15px;
   font-size: 22px;
   text-transform: capitalize;
-
+  width: 100%;
+}
+@media (max-width:768px){
+  .services .icon-box h4{
+    font-size: 16px;
+  }
 }
 
 .services .icon-box h4 a {

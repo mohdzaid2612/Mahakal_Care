@@ -250,7 +250,7 @@
         width: 100%;
         text-align: left;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         font-size: 1rem;
     }
@@ -270,7 +270,12 @@
       .li__footer span{
         font-size: 0.8rem;
       }
-    
+      .contact__footer__links{
+          width: 100% !important;
+      }
+      .contact__footer__links ul{
+          width: 100%;
+      }
 }
 
 @media (max-width:450px){
